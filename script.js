@@ -1,7 +1,7 @@
 // clé API : 07d616ae701c57a467e821b0867b2da6
 window.onload=function(){
-    let ville = "Grenoble";
-    recevoirTemperature("Grenoble");
+    let ville = "Saint-Martin-d'hères";
+    recevoirTemperature("Saint-Martin-d'hères");
 
 let changerDeVille = document.querySelector("#changer");
 changerDeVille.addEventListener("click", function(event) {
