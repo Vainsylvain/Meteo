@@ -13,6 +13,11 @@ html, body {
     font-size: 4em;
   }
   
+  #temperature_ressentie
+  {
+    font-size: 1em;
+  }
+
   #changer {
     background: rgba(178, 223, 251, .3);
     cursor: pointer;

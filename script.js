@@ -27,8 +27,16 @@ requete.onload = function () {
         let reponse = requete.response;
         let temperature = reponse.main.temp;
         let ville = reponse.name;
+        let temperature_ressentie = reponse.main.feels_like;
+        let humidite = reponse.main.humidity;
+        let description = reponse.weather.description;
+        let vitesse_vent = reponse.wind.speed;      
         document.querySelector("#temperature_label").textContent = temperature;
         document.querySelector("#ville").textContent = ville;
+        document.querySelector("#temperature_ressentie").textContent = temperature_ressentie;
+        document.querySelector("#humidite").textContent = humidite;
+        document.querySelector("#description").textContent = description;
+        document.querySelector("#vitesse_vent").textContent = vitesse_vent;
     }
     else{
         alert("Un problème est intervenu, merci de revenir plus tard")
