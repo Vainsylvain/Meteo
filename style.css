@@ -1,24 +1,34 @@
-html, body {
+/* STYLE ARRIERE PLAN AVEC DEGRADE */
+html, body 
+{
     background: #2980B9;
     background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
     background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
     min-width: 400px;
   }
   
-  #ville {
-    text-transform: capitalize;
-  }
-  
-  #temperature {
-    font-size: 4em;
-  }
-  
-  #temperature_ressentie
+  #ville
   {
-    font-size: 1em;
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-shadow: #000000 1px 0 10px;
   }
 
-  #changer {
-    background: rgba(178, 223, 251, .3);
+  #entetes 
+  {
+    font-size: 4em;
+    padding-bottom: 20px;
+  }
+  
+  /* TAILLE PLUS ELEVEE TEMPERATURE RESSENTIE */
+  #temperature_ressentie
+  {
+    font-size: 1.5em;
+  }
+
+  /* STYLE DU BOUTON */
+  #changer 
+  {
+    background: rgba(219, 0, 248, 0.103);
     cursor: pointer;
   }

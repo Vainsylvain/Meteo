@@ -1,83 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    <link rel ="stylesheet" type="text/css" href="style.css" >
-    <title>Application météo</title>
-</head>
+  <!-- INSERTION FAVICON -->
+  <link rel="icon" type="image/x-icon" href="favicon.png"/>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
+  <head>
+      <!-- ENCODAGE UTF8 -->
+      <meta charset="UTF-8">
+      <!-- COMPATIBILTE NAVIGATEURS -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- IMPORT JQUERY VIA INTERNET -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <!-- IMPORT BOOTSTRAP VIA INTERNET -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"></script>
+      <!-- IMPORT POLICE LATO VA INTERNET-->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+      <!-- LIEN VERS FEUILLE DE STYLE CSS -->
+      <link rel ="stylesheet" type="text/css" href="style.css" >
+      <title>Application météo</title>
+  </head>
 
-<body>
-<script src="script.js"></script>
-<div class="container">
-  
-    <div class="row justify-content-center">
-      
-      <div class="col-md-8">
-        <!-- Titre -->
-        <h1 class="text-center mt-5">Météo</h1>
+  <body>
+    <!-- LIEN VERS CODE JAVASCRIPT -->
+    <script src="script.js"></script>
+    <!-- DIV CLASS CONTAINER BOTTSTRAP -->
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <!-- Titre -->
+            <h1 class="text-center mt-5">Météo</h1>
+            
+            <!-- Ville / Temperature -->
+            <div class="text-center">
+              <span id="ville"><script type="text/javascript">ville</script></span>
+              <span id="description">Température</span>
+              <div id="entetes">
+                <span id="temperature_label">
+                  xx.x
+                </span> °C
+              </div>
+            </div>
+
+                <!-- Temperature ressentie -->
+            <div class="text-center">
+              <span id="titre">Température ressentie</span>
+            
+              <div id="entetes">
+                <span id="temperature_ressentie">
+                  xx.x
+                </span> °C
+              </div>
+            </div> 
+
+                <!-- Humidite -->
+            <div class="text-center">
+              <span id="titre">Humidité (%)</span>
+            
+              <div id="entetes">
+                <span id="humidite">
+                  xx
+                </span>  %
+              </div>
+            </div>
+
+            <!-- Vent -->
+            <div class="text-center">
+              <span id="titre">Vitesse du vent</span>
+            
+              <div id="entetes">
+                <span id="vitesse_vent">
+                  xx.x
+                </span> km/H
+              </div>
+            </div>
         
-        <!-- Ville / Temperature -->
-        <div class="text-center">
-          <span id="ville">paris</span>
-          <span id="description">Température</span>
-          <div id="temperature">
-            <span id="temperature_label">
-              xx.x
-            </span> °C
+        <!-- BOUTON POUR CHANGER DE VILLE -->
+        <div class="row justify-content-center">  
+          <div class="col-md-8 text-center">
+            <!-- Changer de ville -->
+            <div id="changer" class="mt-2 text-center p-3 text-white font-weight-bold text-uppercase d-inline-block">
+              Changer de ville
+            </div>
           </div>
-        </div>
-
-            <!-- Temperature ressentie -->
-        <div class="text-center">
-          <span id="titre">Température ressentie</span>
-        
-          <div id="temperature">
-            <span id="temperature_ressentie">
-              xx.x
-            </span> °C
-          </div>
-        </div> 
-
-            <!-- Humidite -->
-        <div class="text-center">
-          <span id="titre">Humidité (%)</span>
-        
-          <div id="temperature">
-            <span id="humidite">
-              xx
-            </span>  %
-          </div>
-        </div>
-
-        <!-- Vent -->
-        <div class="text-center">
-          <span id="titre">Vitesse du vent</span>
-        
-          <div id="temperature">
-            <span id="vitesse_vent">
-              xx.x
-            </span> km/H
-          </div>
-        </div>
-
-    <div class="row justify-content-center">  
-      <div class="col-md-8 text-center">
-        <!-- Changer de ville -->
-        <div id="changer" class="mt-2 text-center p-3 text-white font-weight-bold text-uppercase d-inline-block">
-          Changer de ville
         </div>
       </div>
     </div>
-  </div>
-</div>
-
-</body>
+  </body>
 </html>
 
